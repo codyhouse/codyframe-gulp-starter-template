@@ -1,0 +1,24 @@
+{
+  "name": "codyframe-gulp-starter-template",
+  "version": "0.0.1",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "codyhouse-framework": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "git+https://github.com/CodyHouse/gulp-sass-glob",
+    "gulp-uglify": "^3.0.2",
+    "postcss-calc": "^7.0.1",
+    "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables",
+    "sass-embedded": "^1.0.0-beta.3"
+  }
+}

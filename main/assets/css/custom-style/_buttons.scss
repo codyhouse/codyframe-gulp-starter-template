@@ -1,0 +1,105 @@
+@use '../base' as *;
+
+// --------------------------------
+
+// (START) Global editor code https://codyhouse.co/ds/globals/buttons
+
+// --------------------------------
+
+:root {
+  --btn-font-size: 1em;
+  --btn-padding-x: var(--space-sm);
+  --btn-padding-y: var(--space-xxs);
+  --btn-radius: var(--radius-md);
+}
+
+.btn {
+  background: var(--color-bg-dark);
+  color: var(--color-contrast-higher);
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
+  @include fontSmooth;
+  transition: all 0.2s ease;
+  will-change: transform;
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px alpha(var(--color-contrast-higher), 0.15);
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+// themes
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-xs);
+
+  &:hover {
+    background: var(--color-primary-light);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px alpha(var(--color-primary), 0.2);
+  }
+}
+
+.btn--subtle {
+  background: var(--color-bg-light);
+  color: var(--color-contrast-higher);
+  box-shadow: 0px 0px 0px 1px alpha(var(--color-contrast-higher), 0.08), var(--shadow-xs);
+
+  &:hover {
+    background: var(--color-bg-lighter);
+    box-shadow: 0px 0px 0px 1px alpha(var(--color-contrast-higher), 0.08), var(--shadow-sm);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 1px alpha(var(--color-contrast-higher), 0.08), var(--shadow-xs), 0px 0px 0px 3px alpha(var(--color-contrast-higher), 0.05);
+  }
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: var(--shadow-xs);
+
+  &:hover {
+    background: var(--color-accent-light);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px alpha(var(--color-accent), 0.2);
+  }
+}
+
+// feedback
+.btn--disabled, .btn[disabled], .btn[readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+// size
+.btn--sm {
+  font-size: 0.8em;
+}
+
+.btn--md {
+  font-size: 1.2em;
+}
+
+.btn--lg {
+  font-size: 1.4em;
+}
+
+// --------------------------------
+
+// (END) Global editor code
+
+// --------------------------------
