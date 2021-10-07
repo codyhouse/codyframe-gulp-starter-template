@@ -1,6 +1,6 @@
 {
   "name": "codyframe-gulp-starter-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
