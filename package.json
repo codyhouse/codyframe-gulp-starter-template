@@ -1,6 +1,6 @@
 {
   "name": "codyframe-gulp-starter-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
     "browser-sync": "^2.26.3",
     "codyhouse-framework": "^3.0.0",
     "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
     "gulp-purgecss": "^3.0.0",
